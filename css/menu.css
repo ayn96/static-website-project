@@ -1,0 +1,62 @@
+/* heading section */
+.heading{
+  background-image: url(../assets/images/menu-heading.jpg);
+  background-size: cover;
+}
+
+/* common section */
+.style{
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  text-align: center;
+  padding-top: 10vh;
+  height: 100vh;
+}
+
+/* text group section */
+.text-group{
+  display: flex;
+  justify-content: center;
+  z-index: -1;
+}
+
+.text-group h2{
+  background-color: white;
+  position: absolute;
+  text-align: center;
+  border: 1px solid black;
+  padding: 1rem 2rem;
+  margin-bottom: 2rem;
+}
+
+.text-group p{
+  width: 80%;
+  margin: 2rem 3rem;
+  position: relative;
+  padding: 4rem 3rem 2rem;
+  border: 1px solid black;
+  z-index: -2;
+}
+
+/* flexbox section */
+.flexbox{
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.image-group{
+  width: calc(100vw / 3);
+}
+
+.image-group img{
+  width: fit-content;
+  height: 30vh;
+  object-fit: cover;
+}
+
+.menu-name,
+.menu-price{
+  text-align: center;
+}
