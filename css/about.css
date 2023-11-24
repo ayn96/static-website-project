@@ -3,7 +3,7 @@
   background-size: cover;
 }
 
-/* welcome section */
+/* common section */
 .item {
   display: flex;
   flex-flow: column;
@@ -21,12 +21,13 @@
   width: 50%;
 }
 
-
+/* welcome section */
 .welcome img {
   float: left;
   margin: 0 2rem 1rem 0;
 }
 
+/* vege section */
 .vege img {
   float: right;
   margin: 0 0 1rem 2rem;

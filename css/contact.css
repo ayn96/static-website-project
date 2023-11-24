@@ -77,3 +77,38 @@ button[type="submit"] {
   font-size: 20px;
   font-family: 'Arsenal', sans-serif;
 }
+
+/* infomation&sns section */
+.flexbox{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  column-gap: 3rem;
+}
+
+.info,
+.sns{
+  display: flex;
+  flex-flow: column;
+  row-gap: 1rem;
+  border: 1.5px solid black;
+  padding: 2rem;
+  width: 30vh;
+  height: 30vh;
+}
+
+.tell i{
+  color: rgb(39, 39, 149);
+}
+
+.email i{
+  color: rgb(255, 141, 60);
+}
+
+.insta i{
+  color: rgb(250, 121, 142);
+}
+
+.facebook i{
+  color: blue;
+}
