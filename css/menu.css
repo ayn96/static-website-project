@@ -60,3 +60,39 @@
 .menu-price{
   text-align: center;
 }
+
+@media (max-width: 480px) {
+  .heading {
+    top: 0;
+    height: 30vh;
+  }
+
+  .text-group p{
+    width: 100%;
+    margin: 2rem 0;
+  }
+
+  .style{
+    padding: 0;
+    height: auto;
+    margin: 5rem auto;
+  }
+
+  .flexbox{
+    display: block;
+  }
+
+  .image-group {
+    display: block;
+    width: 100%;
+    margin: 2rem 0;
+  }
+
+  #lunch,
+  #dinner,
+  #drinks,
+  #desserts{
+    padding-top: 10vh;
+  }
+
+}

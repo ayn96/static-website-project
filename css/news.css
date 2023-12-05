@@ -50,8 +50,17 @@
     height: 30vh;
   }
 
-  .item{
+  .news-list {
+    margin: 2rem 1rem;
     height: auto;
-    margin: 10vh auto;
+  }
+
+  .news-content{
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .news-content h3{
+    padding-left: 2rem;
   }
 }
