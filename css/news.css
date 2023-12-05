@@ -43,3 +43,15 @@
   list-style: none;
 }
 
+
+@media (max-width: 480px) {
+  .heading {
+    top: 0;
+    height: 30vh;
+  }
+
+  .item{
+    height: auto;
+    margin: 10vh auto;
+  }
+}
