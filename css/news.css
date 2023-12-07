@@ -16,7 +16,7 @@
 .news-content{
   display: flex;
   align-items: center;
-  width: 60%;
+  width: 80%;
   background-color: rgba(0, 0, 0, 0.1);
   border: 1px solid black;
   border-radius: 10px;

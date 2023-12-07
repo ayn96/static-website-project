@@ -4,6 +4,7 @@
   background-size: cover;
 }
 
+/* content section */
 #faq {
   display: flex;
   height: auto;
@@ -11,69 +12,109 @@
   width: 80vw;
 }
 
-/* faq content */
-.category {
-  /* position: sticky;
-  top: 0; */
+/* category section */
+.category-group {
   display: flex;
   flex-flow: column;
   width: 30%;
 }
 
-.category ul{
-  position: sticky;
-  top: 50%;
-  padding: 1rem 0;
-}
-.category h3 {
+.category-group h3 {
   position: sticky;
   top: 47%;
 }
 
-.category li {
+.category-group ul {
+  position: sticky;
+  top: 50%;
+  padding: 1rem 0;
+}
+
+.category-group li {
   list-style: none;
 }
 
-.category li::before {
+.category-group li::before {
   list-style: none;
   content: "▶︎ ";
   color: brown;
 }
 
-.faq-list {
+/* faq section */
+dl {
+  margin: 1rem 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  border: 1px solid black;
+  padding: 1rem ;
+}
+
+dt {
+  position: relative;
+  cursor: pointer;
+  user-select: none;
+  margin-top: 1rem;
+}
+
+dt::before {
+  content: "Q. ";
+  color: brown;
+  font-weight: bold;
+  padding-right: 0.5rem;
+}
+
+dt::after {
+  position:absolute;
+  content: "＋";
+  font-size: 20px;
+  transition: transform 0.3s;
+  right: 0;
+}
+
+dl > div.appear dt::after {
+  transform: rotate(45deg);
+}
+
+dd {
+  margin-top: 2rem;
+  display: none;
+  flex: 100%;
+}
+
+dd::before {
+  content: "A. ";
+  color: brown;
+  font-weight: bold;
+}
+
+dl > div.appear dd {
+  display: block;
+  animation: 0.3s fadeIn;
+  width: 100%;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.faq-group {
   flex: 2;
   width: 100%;
 }
 
-.faq-content {
-  display: flex;
-  align-items: center;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 1.5rem;
-  margin: 1rem 0;
-}
-
-.faq-content p {
-  flex: 1;
-  border-left: solid 3px;
-  padding-left: 0.5rem;
-}
-
-.faq-content h4 {
-  flex: 3;
-  padding-left: 2rem;
-}
-
-.faq-content i {
-  flex: 1;
-  text-align: end;
-}
-
-.faq-list li {
-  list-style: none;
+.category {
+  display: inline-block;
+  background-color: white;
+  margin-right: 1rem;
+  border-radius: 10%;
+  padding: 0.3rem;
 }
 
 @media (max-width: 480px) {
@@ -82,17 +123,28 @@
     height: 30vh;
   }
 
-  .faq-list {
-    margin: 2rem 1rem;
-    height: auto;
+  #faq {
+    display: block;
   }
 
-  .faq-content {
+  .category-group {
     width: 100%;
-    padding: 1rem;
+    flex-flow: nowrap;
+    justify-content: space-around;
   }
 
-  .faq-content h3 {
-    padding-left: 2rem;
+  .category-group h3 {
+    position: static;
   }
+
+  .category-group ul {
+    position: static;
+    padding: 0;
+    margin-bottom: 2rem;
+  }
+
+  .category-group li{
+    margin: auto 0.5rem;
+  }
+
 }
