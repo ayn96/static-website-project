@@ -1,0 +1,32 @@
+.heading {
+  background-image: url(../assets/images/404.jpg);
+  background-size: cover;
+}
+
+.message {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  height: calc(100vh - 10vh);
+  text-align: center;
+}
+
+.message p {
+  margin: 3rem;
+}
+
+.message a {
+  background-color: rgba(165, 42, 42, 0.7);
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+.message a:hover {
+  background-color: brown;
+}
+
+a:hover::after {
+  transform: scale(0, 0);
+}

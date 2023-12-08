@@ -1,48 +1,91 @@
 /* heading section */
-.heading{
+.heading {
   background-image: url(../assets/images/news-heading.jpg);
   background-size: cover;
 }
 
+/* tab section */
+.tab-group {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 10vh 5vw;
+}
+
+.tab-label {
+  color: White;
+  background: black;
+  margin-right: 0.5rem;
+  padding: 0.3rem 1rem;
+  order: -1;
+}
+
+.tab-content {
+  width: 100%;
+  display: none;
+  padding: 2rem;
+  border: 1px solid black;
+}
+
+.tab-switch:checked+.tab-label {
+  background: brown;
+}
+
+.tab-switch:checked+.tab-label+.tab-content {
+   display: block;
+}
+
+.tab-switch {
+  display: none;
+}
+
 /* news content */
-.news-list{
+.news-list {
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
-  height: 100vh;
 }
 
-.news-content{
+.news-list a {
+  width: 100%;
+}
+
+.news-list a:hover{
+  background-color: lightgray;
+  transition: 0.5s;
+}
+
+.news-content {
   display: flex;
   align-items: center;
-  width: 80%;
+  border-bottom: 1px solid black;
+  padding: 1.5rem;
   background-color: rgba(0, 0, 0, 0.1);
-  border: 1px solid black;
-  border-radius: 10px;
-  padding: 2rem;
-  margin: 1rem 0;
 }
 
-.news-content p{
+.category{
   flex: 1;
-  text-align: end;
+  background-color: white;
+  padding: 0.5rem;
+  border-radius: 5px;
+  text-align: center;
 }
 
-.news-content h3{
-  flex: 2;
-  padding-left: 4rem;
-}
-
-.news-content i{
+.date {
   flex: 1;
-  text-align: end;
+  text-align: center;
+  margin-left: 1rem;
 }
 
-.news-list li{
+.news-title {
+  flex: 3;
+  text-align: start;
+  padding-left: 2rem;
+}
+
+.news-list li {
   list-style: none;
 }
-
 
 @media (max-width: 480px) {
   .heading {
@@ -51,16 +94,32 @@
   }
 
   .news-list {
-    margin: 2rem 1rem;
+    margin: 1.5rem 1rem;
     height: auto;
   }
 
-  .news-content{
+  .news-content {
+    display: inline-block;
     width: 100%;
     padding: 1rem;
   }
 
-  .news-content h3{
-    padding-left: 2rem;
+  .date{
+    margin: 0.5rem 0;
+    text-align: start;
+  }
+
+  .news-title {
+    padding-left: 0;
+    float: left;
+    width: 90%;
+  }
+
+  .news-content i{
+    right: 0;
+  }
+
+  .tab-content {
+    padding: 0;
   }
 }
