@@ -176,9 +176,9 @@
 
 /* footer section */
 footer {
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   border-top: 2px solid black;
   height: 10vh;
 }
@@ -281,6 +281,8 @@ footer {
 @media only screen and (min-width: 768px) and (max-width: 1024px)  {
   .content {
     padding-top: 10vh;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   /* nav section */
@@ -306,11 +308,11 @@ footer {
   }
 
   .sp-menu i{
-    font-size: 50px;
+    font-size: 30px;
   }
 
   .responsive-logo {
-    font-size: 25px;
+    font-size: 20px;
   }
 
   .sp-menu #open.hide {
@@ -338,7 +340,7 @@ footer {
   .overlay li {
     padding: 0.5rem 2rem;
     text-align: end;
-    font-size: 35px;
+    font-size: 30px;
   }
 
   .overlay.show {

@@ -16,20 +16,22 @@
 .contact h5 {
   margin-bottom: 5rem;
   font-weight: bold;
-  font-size: 25px;
-  color: brown;
+  font-size: 2rem;
+  color: white;
+  background-color: black;
 }
 
 .contact-form {
   display: grid;
   grid-gap: 1rem;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-template-rows: auto auto auto auto auto;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto auto auto auto auto auto;
   vertical-align: middle;
 }
 
-.contact-form h4 {
+.contact-form h3 {
   margin: 1rem auto;
+  text-align: center;
 }
 
 /* form-group setion */
@@ -48,7 +50,7 @@
 
 /* message section */
 .message {
-  grid-column: 3 / 5;
+  grid-column: 3 / 6;
   grid-row: 1 / 4;
 }
 
@@ -63,58 +65,26 @@ textarea {
 /* button section */
 button[type="submit"] {
   display: inline-block;
-  transition: background-color 0.3s ease;
-  grid-column: 2 / 4;
-  grid-row: 6 / 7;
-  height: 3rem;
-  margin-top: 2rem;
-  padding: 2rem auto;
-  font-weight: bold;
+  transition: 0.3s;
+  grid-column: 3 / 4;
+  grid-row: 7 / 8;
+  height: 3.5rem;
+  margin-top: 5vh;
   font-size: 20px;
   font-family: "Arsenal", sans-serif;
+  background-color: rgba(165, 42, 42, 0.8);
+  color: white;
+  border: none;
+  border-radius: 10px;
 }
 
-/* infomation&sns section */
-.flexbox {
-  display: flex;
-  justify-content: center;
-  text-align: center;
-  column-gap: 3rem;
+button:hover{
+  background-color: brown;
+  font-size: 23px;
 }
 
-.info,
-.sns {
-  display: flex;
-  flex-flow: column;
-  row-gap: 1rem;
-  border: 1.5px solid black;
-  padding: 2rem;
-  width: 30vh;
-  height: 30vh;
-}
-
-.tell i {
-  color: rgb(39, 39, 149);
-}
-
-.email i {
-  color: rgb(255, 141, 60);
-}
-
-.insta i {
-  color: rgb(250, 121, 142);
-}
-
-.facebook i {
-  color: blue;
-}
-
+/* Mobile Screen */
 @media (max-width: 480px) {
-  .heading {
-    top: 0;
-    height: 30vh;
-  }
-
   .contact h5 {
     margin: 5rem 0;
   }
@@ -135,28 +105,16 @@ button[type="submit"] {
   .contact {
     height: auto;
   }
+}
 
-  .flexbox {
-    display: inline-block;
-    width: 100%;
-  }
-
-  .info,
-  .sns {
-    width: 100%;
+/* Tablet Screen */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .contact {
     height: auto;
-    margin: 1rem 0;
+    margin: 3rem auto;
   }
 
-  .tell,
-  .email,
-  .insta,
-  .facebook,
-  .twitter {
-    display: flex;
-    justify-content: space-between;
-    text-align: start;
-    width: 70%;
-    margin: 1rem 0;
+  .contact h5 {
+    margin: 2rem;
   }
 }

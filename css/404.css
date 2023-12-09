@@ -17,16 +17,22 @@
   margin: 3rem;
 }
 
-.message a {
+.back-button a{
   background-color: rgba(165, 42, 42, 0.7);
   padding: 1rem;
   border-radius: 10px;
 }
 
-.message a:hover {
+.back-button:hover a{
   background-color: brown;
 }
 
-a:hover::after {
+.back-button a:hover::after {
   transform: scale(0, 0);
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px)  {
+  .heading{
+    height: calc(100vh - 10vh);
+  }
 }

@@ -4,7 +4,8 @@
 }
 
 /* common section */
-.item {
+.item1,
+.item2{
   display: flex;
   flex-flow: column;
   justify-content: center;
@@ -12,14 +13,45 @@
   height: calc(100vh - 10vh);
 }
 
-.item h2 {
-  text-align: center;
-  margin-bottom: 2rem;
+.item1{
+  animation: slideinRight 3s ;
 }
 
-.item img{
+@keyframes slideinRight {
+  0% {
+    transform: translateX(100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+.item2 {
+  animation: slideinLeft 3s;
+}
+
+@keyframes slideinLeft {
+  0% {
+    transform: translateX(-100px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+
+.title{
+  text-align: center;
+  margin-bottom: 2rem;
+  color: brown;
+}
+
+.item1 img,
+.item2 img{
   width: 50%;
 }
+
+
 
 /* welcome section */
 .welcome img {
@@ -42,7 +74,8 @@
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1024px)  {
-  .item{
+  .item1,
+  .item2{
     height: auto;
     margin: 10vh auto;
   }

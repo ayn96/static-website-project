@@ -22,7 +22,8 @@
 }
 
 .text-group h2{
-  background-color: white;
+  background-color: brown;
+  color: white;
   position: absolute;
   text-align: center;
   border: 1px solid black;

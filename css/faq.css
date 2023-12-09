@@ -46,7 +46,7 @@ dl {
   width: 100%;
   background-color: rgba(0, 0, 0, 0.1);
   border: 1px solid black;
-  padding: 1rem ;
+  padding: 1rem;
 }
 
 dt {
@@ -60,7 +60,6 @@ dt::before {
   content: "Q. ";
   color: brown;
   font-weight: bold;
-  padding-right: 0.5rem;
 }
 
 dt::after {
@@ -77,8 +76,10 @@ dl > div.appear dt::after {
 
 dd {
   margin-top: 2rem;
+  padding: 1rem;
   display: none;
-  flex: 100%;
+  width: 100%;
+  background-color: white;
 }
 
 dd::before {
