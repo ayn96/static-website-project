@@ -24,7 +24,7 @@
 }
 
 .back-button:hover a{
-  background-color: brown;
+  background-color: var(--accent-color);
 }
 
 .back-button a:hover::after {

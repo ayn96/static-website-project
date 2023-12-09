@@ -17,8 +17,8 @@
   margin-bottom: 5rem;
   font-weight: bold;
   font-size: 2rem;
-  color: white;
-  background-color: black;
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 .contact-form {
@@ -45,7 +45,7 @@
   width: 80%;
   height: 3rem;
   border: none;
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid var(--primary-color);
 }
 
 /* message section */
@@ -57,7 +57,7 @@
 textarea {
   width: 100%;
   height: 90%;
-  border: 2px solid black;
+  border: 2px solid var(--primary-color);
   border-radius: 10px;
   resize: vertical;
 }
@@ -71,17 +71,18 @@ button[type="submit"] {
   height: 3.5rem;
   margin-top: 5vh;
   font-size: 20px;
-  font-family: "Arsenal", sans-serif;
+  font-family: 'PT Serif', serif;
   background-color: rgba(165, 42, 42, 0.8);
-  color: white;
+  color: var(--secondary-color);
   border: none;
   border-radius: 10px;
 }
 
 button:hover{
-  background-color: brown;
+  background-color: var(--accent-color);
   font-size: 23px;
 }
+
 
 /* Mobile Screen */
 @media (max-width: 480px) {

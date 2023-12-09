@@ -22,11 +22,11 @@
 }
 
 .text-group h2{
-  background-color: brown;
-  color: white;
+  background-color: var(--accent-color);
+  color: var(--secondary-color);
   position: absolute;
   text-align: center;
-  border: 1px solid black;
+  border: 1px solid var(--primary-color);
   padding: 1rem 2rem;
   margin-bottom: 2rem;
 }
@@ -36,7 +36,7 @@
   margin: 2rem 3rem;
   position: relative;
   padding: 4rem 3rem 2rem;
-  border: 1px solid black;
+  border: 1px solid var(--primary-color);
   z-index: -2;
 }
 

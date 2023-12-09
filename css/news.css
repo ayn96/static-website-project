@@ -12,8 +12,8 @@
 }
 
 .tab-label {
-  color: White;
-  background: black;
+  color: var(--secondary-color);
+  background: var(--primary-color);
   margin-right: 0.5rem;
   padding: 0.3rem 1rem;
   order: -1;
@@ -23,11 +23,11 @@
   width: 100%;
   display: none;
   padding: 2rem;
-  border: 1px solid black;
+  border: 1px solid var(--primary-color);
 }
 
 .tab-switch:checked+.tab-label {
-  background: brown;
+  background: var(--accent-color);
 }
 
 .tab-switch:checked+.tab-label+.tab-content {
@@ -58,14 +58,14 @@
 .news-content {
   display: flex;
   align-items: center;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid var(--primary-color);
   padding: 1.5rem;
   background-color: rgba(0, 0, 0, 0.1);
 }
 
 .category{
   flex: 1;
-  background-color: white;
+  background-color: var(--secondary-color);
   padding: 0.5rem;
   border-radius: 5px;
   text-align: center;

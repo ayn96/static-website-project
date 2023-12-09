@@ -43,7 +43,7 @@
 .title{
   text-align: center;
   margin-bottom: 2rem;
-  color: brown;
+  color: var(--accent-color);
 }
 
 .item1 img,
