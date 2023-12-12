@@ -421,4 +421,17 @@ footer {
     flex: 1;
     padding: 0;
   }
+
+  /* footer section */
+  footer{
+    height: auto;
+  }
+
+  .footer-flexbox{
+    padding: 0 2rem;
+  }
+
+  .footer-logo{
+    padding: 0;
+  }
 }
