@@ -15,8 +15,8 @@
   <body>
     <header>
       <div class="nav">
-        <span class="logo"><a href="../index.html">KuRes</a></span>
-        <span class="menu">
+        <div class="logo"><a href="../index.html">KuRes</a></div>
+        <div class="menu">
           <ul>
             <li>
               <a href="../pages/about.html" class="menu-a">ABOUT KuRes</a>
@@ -26,7 +26,7 @@
             </li>
             <li>
               <div class="dropdown">
-                <a href="../pages/menu.html"  class="menu-a">MENU</a>
+                <a href="../pages/menu.html" class="menu-a">MENU</a>
                 <ul class="dropdown-menu">
                   <li><a href="../pages/menu.html#lunch">LUNCH</a></li>
                   <li><a href="../pages/menu.html#dinner">DINNER</a></li>
@@ -51,9 +51,9 @@
               <a href="../pages/contact.html" class="menu-a">CONTACT</a>
             </li>
           </ul>
-        </span>
+        </div>
         <!-- nav section for responsive -->
-        <span class="responsive">
+        <div class="responsive">
           <div class="responsive-logo">
             <h1><a href="../index.html">KuRes</a></h1>
           </div>
@@ -61,31 +61,31 @@
             <i class="fa-solid fa-bars" id="open"></i>
           </div>
           <div class="overlay">
-          <i class="fa-solid fa-xmark" id="close"></i>
-          <nav>
-            <ul>
-              <li>
-                <a href="../pages/about.html" class="menu-a">ABOUT KuRes</a>
-              </li>
-              <li>
-                <a href="../pages/news.html" class="menu-a">NEWS</a>
-              </li>
-              <li>
-                <a href="../pages/menu.html"  class="menu-a">MENU</a>
-              </li>
-              <li>
-                <a href="../pages/location.html" class="menu-a">LOCATION</a>
-              </li>
-              <li>
-                <a href="../pages/faq.html"  class="menu-a">FAQ</a>
-              </li>
-              <li>
-                <a href="../pages/contact.html"  class="menu-a">CONTACT</a>
-              </li>
-            </ul>
-          </nav>
+            <i class="fa-solid fa-xmark" id="close"></i>
+            <nav>
+              <ul>
+                <li>
+                  <a href="../pages/about.html" class="menu-a">ABOUT KuRes</a>
+                </li>
+                <li>
+                  <a href="../pages/news.html" class="menu-a">NEWS</a>
+                </li>
+                <li>
+                  <a href="../pages/menu.html" class="menu-a">MENU</a>
+                </li>
+                <li>
+                  <a href="../pages/location.html" class="menu-a">LOCATION</a>
+                </li>
+                <li>
+                  <a href="../pages/faq.html" class="menu-a">FAQ</a>
+                </li>
+                <li>
+                  <a href="../pages/contact.html" class="menu-a">CONTACT</a>
+                </li>
+              </ul>
+            </nav>
           </div>
-        </span>
+        </div>
       </div>
     </header>
 
@@ -100,95 +100,119 @@
         <!-- tab section -->
         <div class="tab-group">
           <!-- all tab -->
-          <input id="tab1" type="radio" name="tab" class="tab-switch" checked="checked"/>
+          <input
+            id="tab1"
+            type="radio"
+            name="tab"
+            class="tab-switch"
+            checked="checked"
+          />
           <label class="tab-label" for="tab1">ALL</label>
           <div class="tab-content">
             <ul class="news-list">
-              <a href="../pages/404.html">
-                <li class="news-content">
+              <li>
+                <a href="../pages/404.html"  class="news-content">
                   <h5 class="category">LOCATION</h5>
                   <p class="date">2023/11/01</p>
                   <h3 class="news-title">We opened new branch</h3>
                   <i class="fa-solid fa-angle-right"></i>
-                </li>
-              </a>
-              <a href="../pages/404.html">
-                <li class="news-content">
+                </a>
+              </li>
+              <li>
+                <a href="../pages/404.html"  class="news-content">
                   <h5 class="category">MENU</h5>
                   <p class="date">2023/04/01</p>
                   <h3 class="news-title">Menu updated</h3>
                   <i class="fa-solid fa-angle-right"></i>
-                </li>
-              </a>
-              <a href="../pages/404.html">
-                <li class="news-content">
+                </a>
+              </li>
+              <li>
+                <a href="../pages/404.html"  class="news-content">
                   <h5 class="category">OTHERS</h5>
                   <p class="date">2023/03/01</p>
                   <h3 class="news-title">We have a special EVENT!</h3>
                   <i class="fa-solid fa-angle-right"></i>
-                </li>
-              </a>
-              <a href="../pages/404.html">
-                <li class="news-content">
+                </a>
+              </li>
+              <li>
+                <a href="../pages/404.html"  class="news-content">
                   <h5 class="category">LOCATION</h5>
                   <p class="date">2023/01/01</p>
                   <h3 class="news-title">We are OPEN!</h3>
                   <i class="fa-solid fa-angle-right"></i>
-                </li>
-              </a>
+                </a>
+              </li>
             </ul>
           </div>
           <!-- menu tab -->
-          <input id="tab2" type="radio" name="tab" class="tab-switch" checked="checked"/>
+          <input
+            id="tab2"
+            type="radio"
+            name="tab"
+            class="tab-switch"
+            checked="checked"
+          />
           <label class="tab-label" for="tab2">MENU</label>
           <div class="tab-content">
             <ul class="news-list">
-              <a href="../pages/404.html">
-                <li class="news-content">
+              <li>
+                <a href="../pages/404.html"  class="news-content">
                   <h5 class="category">MENU</h5>
                   <p class="date">2023/04/01</p>
                   <h3 class="news-title">Menu updated</h3>
                   <i class="fa-solid fa-angle-right"></i>
-                </li>
-              </a>
+                </a>
+              </li>
             </ul>
           </div>
           <!-- location tab -->
-          <input id="tab3" type="radio" name="tab" class="tab-switch" checked="checked"/>
+          <input
+            id="tab3"
+            type="radio"
+            name="tab"
+            class="tab-switch"
+            checked="checked"
+          />
           <label class="tab-label" for="tab3">LOCATION</label>
           <div class="tab-content">
             <ul class="news-list">
-              <a href="../pages/404.html">
-                <li class="news-content">
+              <li>
+                <a href="../pages/404.html"  class="news-content">
                   <h5 class="category">LOCATION</h5>
                   <p class="date">2023/11/01</p>
                   <h3 class="news-title">We opened new branch</h3>
                   <i class="fa-solid fa-angle-right"></i>
-                </li>
-              </a>
-              <a href="../pages/404.html">
-                <li class="news-content">
+                </a>
+              </li>
+              <li>
+                <a href="../pages/404.html"  class="news-content">
                   <h5 class="category">LOCATION</h5>
                   <p class="date">2023/01/01</p>
                   <h3 class="news-title">We are OPEN!</h3>
                   <i class="fa-solid fa-angle-right"></i>
-                </li>
-              </a>
+                </a>
+              </li>
             </ul>
           </div>
           <!-- others tab -->
-          <input id="tab4" type="radio" name="tab" class="tab-switch" checked="checked"/>
+          <input
+            id="tab4"
+            type="radio"
+            name="tab"
+            class="tab-switch"
+            checked="checked"
+          />
           <label class="tab-label" for="tab4">OTHERS</label>
           <div class="tab-content">
             <ul class="news-list">
-              <a href="../pages/404.html">
-                <li class="news-content">
+              <li>
+                <a href="../pages/404.html"  class="news-content">
                   <h5 class="category">OTHERS</h5>
                   <p class="date">2023/03/01</p>
                   <h3 class="news-title">We have a special EVENT!</h3>
                   <i class="fa-solid fa-angle-right"></i>
-                </li>
-              </a>
+                </a>
+              </li>
             </ul>
           </div>
         </div>
@@ -211,13 +235,19 @@
         </div>
         <div class="footer-sns">
           <div class="insta">
-            <a href="../pages/404.html"><i class="fa-brands fa-instagram"></i></a>
+            <a href="../pages/404.html"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
           </div>
           <div class="facebook">
-            <a href="../pages/404.html"><i class="fa-brands fa-facebook"></i></a>
+            <a href="../pages/404.html"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
           </div>
           <div class="twitter">
-            <a href="../pages/404.html"><i class="fa-brands fa-square-x-twitter"></i></a>
+            <a href="../pages/404.html"
+              ><i class="fa-brands fa-square-x-twitter"></i
+            ></a>
           </div>
         </div>
       </div>
@@ -225,6 +255,5 @@
       <p class="copyright">© 2023 KuRes</p>
     </footer>
     <script src="../js/menu.js"></script>
-
   </body>
 </html>

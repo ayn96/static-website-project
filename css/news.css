@@ -24,6 +24,7 @@
   display: none;
   padding: 2rem;
   border: 1px solid var(--primary-color);
+  background-image: url(../assets/images/home-background.jpg);
 }
 
 .tab-switch:checked+.tab-label {
@@ -47,11 +48,12 @@
 }
 
 .news-list a {
+  display: flex;
   width: 100%;
 }
 
 .news-list a:hover{
-  background-color: lightgray;
+  background-color: var(--secondary-color);
   transition: 0.5s;
 }
 
@@ -60,12 +62,12 @@
   align-items: center;
   border-bottom: 1px solid var(--primary-color);
   padding: 1.5rem;
-  background-color: rgba(0, 0, 0, 0.1);
 }
 
-.category{
+.category {
   flex: 1;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   padding: 0.5rem;
   border-radius: 5px;
   text-align: center;
@@ -85,6 +87,7 @@
 
 .news-list li {
   list-style: none;
+  width: 100%;
 }
 
 @media (max-width: 480px) {

@@ -207,10 +207,6 @@
   justify-content: center;
 }
 
-.news-list a {
-  width: 100%;
-}
-
 .news-list a:hover {
   background-color: rgba(255, 255, 255, 0.8);
   transition: 0.5s;
@@ -246,6 +242,7 @@
 
 .news-list li {
   list-style: none;
+  width: 100%;
 }
 
 /* menu section */
@@ -327,6 +324,7 @@
 #contact > .flexbox{
   align-items: center;
 }
+
 .contact-img {
   height: 30vh;
   object-fit: cover;
@@ -587,8 +585,11 @@ footer {
 
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .menu ul {
-    display: flex;
     align-items: center;
+  }
+
+  .dropdown:hover .dropdown-menu {
+    display: block;
   }
 
   #top {

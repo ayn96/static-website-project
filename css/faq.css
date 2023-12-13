@@ -57,13 +57,13 @@ dt {
   padding-right: 1rem;
 }
 
-dt::before {
+.question::before {
   content: "Q. ";
   color: var(--accent-color);
   font-weight: bold;
 }
 
-dt::after {
+.question::after {
   position:absolute;
   content: "＋";
   font-size: 20px;
