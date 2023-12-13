@@ -119,7 +119,12 @@
     right: 0;
   }
 
+  .tab-group{
+    flex-flow: column;
+  }
+
   .tab-content {
     padding: 0;
   }
+
 }

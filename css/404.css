@@ -31,6 +31,26 @@
   transform: scale(0, 0);
 }
 
+@media (max-width: 480px) {
+  .content{
+    padding-bottom: 2rem;
+  }
+  .heading{
+    height: 100vh;
+  }
+  .message{
+    height: 100vh;
+  }
+
+  .message h1{
+    font-size: 3rem;
+  }
+
+  .back-button a{
+    background-color: brown;
+  }
+}
+
 @media only screen and (min-width: 768px) and (max-width: 1024px)  {
   .heading{
     height: calc(100vh - 10vh);

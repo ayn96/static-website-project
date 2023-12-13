@@ -10,10 +10,6 @@
   z-index: 1;
 }
 
-.nav a {
-  color: var(--primary-color);
-}
-
 /* logo */
 .logo {
   font-size: 25px;
@@ -179,6 +175,7 @@
 footer {
   border-top: 2px solid var(--primary-color);
   height: 10vh;
+  width: 100vw;
 }
 
 .footer-logo{
@@ -191,14 +188,26 @@ footer {
   justify-content: center;
   text-align: center;
   margin: 1.5rem 0;
+
 }
 
+/* footer-info section */
 .footer-info{
   display: flex;
   justify-content: center;
   align-items: center;
   column-gap: 2rem;
-  margin-left: 3rem;
+  margin: 0 2rem;
+}
+
+/* footer-sns section */
+.footer-sns{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30px;
+  column-gap: 2rem;
+  margin: 0 2rem;
 }
 
 .copyright{
@@ -206,14 +215,8 @@ footer {
   padding: 1.5rem;
 }
 
-.insta i,
-.facebook i,
-.twitter i{
-  font-size: 30px;
-}
-
 .insta a:hover{
-  color: purple;
+  color: rgb(90, 6, 90);
 }
 
 .facebook a:hover{
@@ -221,21 +224,16 @@ footer {
 }
 
 .twitter a:hover{
-  color: rgb(99, 97, 97);
+  color: rgb(250, 93, 93);
 }
-
-
 
 /* Mobile screens */
 @media (max-width: 480px){
-  .content {
-    padding: 10vh 1rem;
-  }
-
    /* nav section */
    .nav {
+    width: 100vw;
+    padding: 0 1rem;
     z-index: 1;
-    padding: 0;
   }
 
    .menu {
@@ -246,7 +244,11 @@ footer {
     display: none;
   }
 
-  /* hamburger section */
+  .responsive-logo{
+    font-size: 15px;
+  }
+
+  /* hamburger-menu section */
   .responsive {
     display: flex;
     align-items: center;
@@ -300,6 +302,11 @@ footer {
     cursor: pointer;
   }
 
+  /* main section */
+  .content {
+    padding: 10vh 1rem;
+  }
+
   /* heading section */
   .heading {
     height: 30vh;
@@ -314,9 +321,29 @@ footer {
     font-size: 3rem;
   }
 
+  .heading ul{
+    flex-flow: column;
+  }
+
   .heading li {
     flex: 1;
     padding: 0;
+  }
+
+  /* footer section */
+  .footer-flexbox{
+    display: block;
+  }
+
+  .footer-logo{
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+
+  .footer-info,
+  .footer-sns {
+    margin: 1rem 0;
   }
 }
 

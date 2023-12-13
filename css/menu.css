@@ -79,6 +79,10 @@
     margin: 2rem 0;
   }
 
+  .image-group img{
+    height: 25vh;
+  }
+
   #lunch,
   #dinner,
   #drinks,

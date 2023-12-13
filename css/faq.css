@@ -54,6 +54,7 @@ dt {
   cursor: pointer;
   user-select: none;
   margin-top: 1rem;
+  padding-right: 1rem;
 }
 
 dt::before {
