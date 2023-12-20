@@ -85,12 +85,15 @@
   width: 100%;
 }
 
+/* Responsive for mobile */
 @media (max-width: 480px) {
+  /* heading section */
   .heading {
     top: 0;
     height: 30vh;
   }
 
+  /* news list section */
   .news-list {
     margin: 1.5rem 1rem;
     height: auto;

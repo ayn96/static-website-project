@@ -4,7 +4,7 @@
   background-size: cover;
 }
 
-/* content section */
+/* common css */
 #faq {
   display: flex;
   height: auto;
@@ -44,7 +44,7 @@
 dl {
   margin: 1rem 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.1);
+  background-image: url(../assets/images/home-background.jpg);
   border: 1px solid var(--primary-color);
   padding: 1rem;
 }
@@ -113,12 +113,14 @@ dl > div.appear dd {
 
 .category {
   display: inline-block;
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
   margin-right: 1rem;
   border-radius: 10%;
   padding: 0.3rem;
 }
 
+/* Responsive for mobile */
 @media (max-width: 480px) {
   .heading {
     top: 0;

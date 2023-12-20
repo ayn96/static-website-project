@@ -4,7 +4,7 @@
   background-size: cover;
 }
 
-/* common section */
+/* common css */
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -95,7 +95,7 @@
   grid-row: 2 / 3;
 }
 
-/* location content section */
+/* location content common css */
 .flexbox {
   display: flex;
   align-items: center;
@@ -120,12 +120,15 @@
   margin: 2rem;
 }
 
+/* Responsive for mobile */
 @media (max-width: 480px) {
+  /* heading section */
   .heading {
     top: 0;
     height: 30vh;
   }
 
+  /* common section */
   .grid{
     height: calc(100vh - 10vh);
   }
@@ -157,6 +160,7 @@
     margin: 1rem auto;
   }
 
+  /* location content common css */
   .flexbox {
     display: block;
     height: auto;

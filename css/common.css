@@ -20,7 +20,7 @@
   color: rgba(0, 0, 0, 0.5);
 }
 
-/* menu section */
+/* menu for desktop*/
 .menu {
   display: flex;
   align-items: center;
@@ -98,7 +98,7 @@
   transition: 0.3s;
 }
 
-/* responsive section */
+/* menu for responsive */
 .responsive {
   display: none;
 }
@@ -178,21 +178,20 @@ footer {
   width: 100vw;
 }
 
-.footer-logo{
+.footer-logo {
   padding: 0 3rem;
   margin-right: 3rem;
 }
 
-.footer-flexbox{
+.footer-flexbox {
   display: flex;
   justify-content: center;
   text-align: center;
   margin: 1.5rem 0;
-
 }
 
 /* footer-info section */
-.footer-info{
+.footer-info {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -201,7 +200,7 @@ footer {
 }
 
 /* footer-sns section */
-.footer-sns{
+.footer-sns {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -210,33 +209,33 @@ footer {
   margin: 0 2rem;
 }
 
-.copyright{
+.copyright {
   text-align: center;
   padding: 1.5rem;
 }
 
-.insta a:hover{
+.insta a:hover {
   color: rgb(198, 22, 198);
 }
 
-.facebook a:hover{
+.facebook a:hover {
   color: blue;
 }
 
-.twitter a:hover{
+.twitter a:hover {
   color: rgb(250, 93, 93);
 }
 
-/* Mobile screens */
-@media (max-width: 480px){
-   /* nav section */
-   .nav {
+/* Responsive for mobile */
+@media (max-width: 480px) {
+  /* nav section */
+  .nav {
     width: 100vw;
     padding: 0 1rem;
     z-index: 1;
   }
 
-   .menu {
+  .menu {
     display: none;
   }
 
@@ -244,7 +243,7 @@ footer {
     display: none;
   }
 
-  .responsive-logo{
+  .responsive-logo {
     font-size: 15px;
   }
 
@@ -321,7 +320,7 @@ footer {
     font-size: 3rem;
   }
 
-  .heading ul{
+  .heading ul {
     flex-flow: column;
   }
 
@@ -331,11 +330,11 @@ footer {
   }
 
   /* footer section */
-  .footer-flexbox{
+  .footer-flexbox {
     display: block;
   }
 
-  .footer-logo{
+  .footer-logo {
     font-size: 1.5rem;
     padding-bottom: 1rem;
     margin: 0;
@@ -347,8 +346,8 @@ footer {
   }
 }
 
-/* Tablet Screen */
-@media only screen and (min-width: 768px) and (max-width: 1024px)  {
+/* Responsive for tablet */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .content {
     padding-top: 10vh;
     padding-left: 1.5rem;
@@ -356,7 +355,7 @@ footer {
   }
 
   /* nav section */
-  .nav{
+  .nav {
     z-index: 1;
   }
 
@@ -377,7 +376,7 @@ footer {
     visibility: visible;
   }
 
-  .sp-menu i{
+  .sp-menu i {
     font-size: 30px;
   }
 
@@ -450,15 +449,15 @@ footer {
   }
 
   /* footer section */
-  footer{
+  footer {
     height: auto;
   }
 
-  .footer-flexbox{
+  .footer-flexbox {
     padding: 0 2rem;
   }
 
-  .footer-logo{
+  .footer-logo {
     padding: 0;
   }
 }

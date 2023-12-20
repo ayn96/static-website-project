@@ -48,10 +48,19 @@
   border-bottom: 2px solid var(--primary-color);
 }
 
+::placeholder{
+  text-align: center;
+}
+
 /* message section */
 .message {
   grid-column: 3 / 6;
   grid-row: 1 / 4;
+}
+
+.message ::placeholder{
+  text-align: start;
+  padding: 1rem;
 }
 
 textarea {
@@ -83,8 +92,7 @@ button:hover{
   font-size: 23px;
 }
 
-
-/* Mobile Screen */
+/* Responsive for mobile */
 @media (max-width: 480px) {
   .contact h5 {
     margin: 5rem 0;
@@ -109,7 +117,7 @@ button:hover{
   }
 }
 
-/* Tablet Screen */
+/* Responsive for tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   .contact {
     height: auto;

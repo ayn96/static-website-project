@@ -1,3 +1,4 @@
+/* heading section */
 .heading {
   background-image: url(../assets/images/404.jpg);
   background-size: cover;
@@ -17,13 +18,13 @@
   margin: 3rem;
 }
 
-.back-button a{
+.back-button a {
   background-color: rgba(165, 42, 42, 0.7);
   padding: 1rem;
   border-radius: 10px;
 }
 
-.back-button:hover a{
+.back-button:hover a {
   background-color: var(--accent-color);
 }
 
@@ -31,28 +32,32 @@
   transform: scale(0, 0);
 }
 
+/* Responsive for mobile  */
 @media (max-width: 480px) {
-  .content{
+  .content {
     padding-bottom: 2rem;
   }
-  .heading{
-    height: 100vh;
-  }
-  .message{
+
+  .heading {
     height: 100vh;
   }
 
-  .message h1{
+  .message {
+    height: 100vh;
+  }
+
+  .message h1 {
     font-size: 3rem;
   }
 
-  .back-button a{
+  .back-button a {
     background-color: brown;
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px)  {
-  .heading{
+/* Responsive for tablet  */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .heading {
     height: calc(100vh - 10vh);
   }
 }

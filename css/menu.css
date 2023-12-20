@@ -4,7 +4,7 @@
   background-size: cover;
 }
 
-/* common section */
+/* common css */
 .style{
   display: flex;
   flex-flow: column;
@@ -62,6 +62,7 @@
   text-align: center;
 }
 
+/* Responsive for mobile */
 @media (max-width: 480px) {
   .style{
     padding: 0;
@@ -89,9 +90,9 @@
   #desserts{
     padding-top: 10vh;
   }
-
 }
 
+/* Responsive for tablet */
 @media only screen and (min-width: 768px) and (max-width: 1024px)  {
   .style{
     padding: 0;
@@ -113,6 +114,5 @@
   #desserts{
     padding-top: 10vh;
   }
-
 }
 
